@@ -2,9 +2,9 @@
 #include <time.h>
 #include <stdio.h>
 /*
-*main - entry point
-*Decription:positive or negative result
-*Return: 0 (Success)
+* main - entry point
+* Decription: false or true n  validation
+* Return: 0 (Success)
 */
 
 int main(void)
