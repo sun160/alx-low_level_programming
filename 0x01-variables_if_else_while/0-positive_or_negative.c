@@ -2,7 +2,7 @@
 #include <time.h>
 #include <stdio.h>
 /*
-* main - entry point
+* main - Entry point
 * Decription: false or true n  validation
 * Return: 0 (Success)
 */
