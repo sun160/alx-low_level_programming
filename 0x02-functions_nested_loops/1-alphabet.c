@@ -1,12 +1,11 @@
 #include "main.h"
 
 /**
- *
  * Description: print the alphabet, in lowercase, followed by a new line
  *
 */
 
-int main(void)
+void print_alphabet(void)
 {
 	int ch;
 
