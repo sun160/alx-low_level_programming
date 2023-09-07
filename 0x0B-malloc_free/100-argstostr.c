@@ -47,14 +47,14 @@ char *argstostr(int ac, char **av)
 
 	for (y = 0; y < ac; y++)
 	{
-		for (e = 0; av[e][y] != '\0'; e++)
+		for (e = 0; av[e][y] != "\0"; e++)
 			cmpt++;
 		s[cmpt] = av[e][y];
 
 		s[cmpt] = '\n';
 		cmpt++;
 	}
-	s[cmpt] = '\0';
+	s[cmpt] = "\0";
 	return (s);
 }
 
