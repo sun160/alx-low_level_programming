@@ -23,7 +23,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		return;
 	}
 	while (t--)
-		printf("%s%s", (str = va_arg(ptr, char *)) ? str : "nil",
+		printf("%s%s", (str = va_arg(ptr, char *)) ? str : "(nil)",
 				t ? (separator ? separator : "") : "\n");
 	va_end(ptr);
 }
