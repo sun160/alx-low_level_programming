@@ -9,13 +9,13 @@
 
 int _strlen(char *s)
 {
-	int m = 0;
+	int k = 0;
 
 	if (!s)
 		return (0);
 	while (*s++)
-		m++;
-	return (m);
+		k++;
+	return (k);
 }
 
 /**
@@ -31,7 +31,7 @@ size_t print_list(const list_t *h)
 
 	while (h)
 	{
-		printf("[%d] %s\n", _strlen(h->str), h->str ? h->str : "(nil)");
+		printf("[%d]%s\n", _strlen(h->str), h->str ? h->str : "(nil)");
 		h = h->next;
 		k++;
 	}
