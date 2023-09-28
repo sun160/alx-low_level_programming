@@ -12,7 +12,7 @@ void print_binary(unsigned long int n)
 	int f, print = 0;
 	unsigned long int pre;
 
-	for (f >= 0; f--)
+	for (f = '?'; f >= 0; f--)
 	{
 		pre = n >> f;
 
