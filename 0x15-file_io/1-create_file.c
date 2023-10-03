@@ -27,20 +27,19 @@ int _strlen(char *h)
 */
 int create_file(const char *filename, char *text_content)
 {
-	int s, y;
+	int e, y;
 	ssize_t l = _strlen(text_content);
 
 	if (filename == NULL)
 		return (-1);
 
-	s = open(filename, O_CREAT | O_RDWR | O_TRUNC, S_IRUSR, S_IWUSR);
+	e = open(filename, O_CREAT | O_RDWR | O_TRUNC, S_IRUSR | S_IWUSR);
+	y = write(e, text_content, l);
 
-	if (s == -1 || y == -1)
+	if (e == -1 || y == -1)
 		return (-1);
-	if (l)
-		y = write(s, text_content, l);
 
-	close(s);
+	close(e);
 
 	return (y == l ? 1 : -1);
 }
